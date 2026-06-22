@@ -18,3 +18,8 @@ while (y < 10) {
 for (let i = 0; i < 10; i++) {
     console.log("i = ", i);
 }
+
+let exampleList = [2, 4, 6, 8]
+for (let item of exampleList) {
+    console.log(item);
+}
