@@ -1,0 +1,26 @@
+<html>
+<body>
+    <h3>Today Fruits</h3>
+    <ul id="fruit-list"></ul>
+    <hr/>
+    <h3>Today Vegetables</h3>
+    <ul id="veg-list"></ul>
+    <script>
+        let fruits = ["Apple", "Banana", "Orange", "Mango", "Strawberry"]
+        let vegetables = ["Carrot", "Broccoli", "Spinach", "Tomato", "Cucumber"]
+
+        let fruitList = document.getElementById("fruit-list")
+        let vegetableList = document.getElementById("veg-list")
+
+        // regular for loop
+        for (let fruit of fruits) {
+            fruitList.innerHTML += `<li>${fruit}</li>`
+        }
+
+        // for each method
+        vegetables.forEach(vegetable => {
+            vegetableList.innerHTML += `<li>${vegetable}</li>`
+        })
+    </script>
+</body>
+</html>
