@@ -1,0 +1,52 @@
+<html>
+<body>
+<h3>All People</h3>
+<ul id="all-people"></ul>
+<h3>Filtered People by First Letter B</h3>
+<ul id="filtered-people"></ul>
+<script>
+    const people = [
+        "Alice Anderson",
+        "Aaron Adams",
+        "Bella Brown",
+        "Brian Black",
+        "Cathy Carter",
+        "Charles Cooper",
+        "Diana Davis",
+        "Daniel Drake",
+        "Ella Evans",
+        "Ethan Edwards",
+        "Fiona Fisher",
+        "Frank Foster",
+        "Grace Green",
+        "Gavin Gray",
+        "Hannah Harris",
+        "Henry Hill",
+        "Isabella Ingram",
+        "Ian Irving",
+        "Jack Johnson",
+        "Julia James"
+    ];
+
+    let filteredPeople = people.filter(
+        (name) => {
+            return name.charAt(0) === "B"
+        }
+    )
+    console.log(filteredPeople)
+
+    people.forEach(
+        (name) => {
+            document.getElementById("all-people").innerHTML += `<li>${name}</li>`
+        }
+    )
+
+    filteredPeople.forEach(
+        (name) => {
+            document.getElementById("filtered-people").innerHTML += `<li>${name}</li>`
+        }
+    )
+
+</script>
+</body>
+</html>
