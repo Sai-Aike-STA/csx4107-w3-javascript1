@@ -26,7 +26,7 @@ Instead, JavaScript often outputs information to the browser’s console, which 
 
 JavaScript can be included in two main ways — external or internal:
 
-**External JavaScript** – written in a separate `.js` file and linked to the HTML page using the `<script src="..."></script>` tag.
+**External JavaScript** – written in a separate .js file and linked to the HTML page using the `<script src="..."></script>` tag.
 
 This is the recommended method for most projects because it keeps your code organized and easier to maintain.
 
@@ -38,25 +38,15 @@ Unless you have a specific reason (for example, a small inline script or quick t
 
 ```html
 <!DOCTYPE html>
-
 <html>
-
-  <head>
-
-    <title>Java Script Example 01</title>
-
-  </head>
-
-  <body>
-
-    <script>
-
-      console.log("Hello World...")
-
-    </script>
-
-  </body>
-
+    <head>
+        <title>Java Script Example 01</title>
+    </head>
+    <body>
+        <script>
+            console.log("Hello World...")
+        </script>
+    </body>
 </html>
 ```
 
@@ -90,27 +80,20 @@ Example:
 
 ```javascript
 let a = 10;
-
 const b = 'hello';
-
 var c = 120.11;
 
 console.log("a ", a);
-
 console.log("b ", b);
-
 console.log("c ", c);
 
 a = 20; // valid
-
 console.log("a ", a);
 
 a = "world"; //also valid
-
 console.log("a ", a);
 
 b = "Hi there"; //invalid due to const keyword
-
 console.log("b ", b);
 ```
 
@@ -124,7 +107,6 @@ Example:
 
 ```javascript
 let x = 10;     // statement
-
 x + 5;          // expression (produces 15)
 ```
 
@@ -153,47 +135,35 @@ Example:
 
 ```javascript
 const a = 10;
-
 const b = 3;
 
 console.log("a =", a);
-
 console.log("b =", b);
 
 // Addition
-
 console.log("Addition (a + b):", a + b);
 
 // Subtraction
-
 console.log("Subtraction (a - b):", a - b);
 
 // Multiplication
-
 console.log("Multiplication (a * b):", a * b);
 
 // Division
-
 console.log("Division (a / b):", a / b);
 
 // Modulus (remainder)
-
 console.log("Modulus (a % b):", a % b);
 
 // Exponentiation
-
 console.log("Exponent (a ** b):", a ** b);
 
 // Increment / Decrement
-
 let x = 5;
 
 console.log("x =", x);
-
 console.log("x++ =", x++);   // returns 5, but becomes 6
-
 console.log("after x++ =", x);
-
 console.log("--x =", --x);   // becomes 5
 ```
 
@@ -273,7 +243,6 @@ Example:
 
 ```javascript
 let y = 2;
-
 ++y;
 
 let x = (10 * (12 + 3))**y;
@@ -307,37 +276,23 @@ Example:
 
 ```javascript
 if (x == 10) {
-
-console.log("1")
-
+    console.log("1")
 }
 
 if (x == 10) {
-
-console.log("1")
-
+    console.log("1")
 } else {
-
-console.log("2")
-
+    console.log("2")
 }
 
 if (x == 10) {
-
- console.log("1")
-
+    console.log("1")
 } else if (x == 20) {
-
-console.log("3")
-
+    console.log("3")
 } else if (x == 30) {
-
-console.log("4")
-
+    console.log("4")
 } else {
-
-console.log ("2")
-
+    console.log ("2")
 }
 ```
 
@@ -347,19 +302,12 @@ The switch syntax is as follow:
 
 ```javascript
 switch (//value//) {
-
-case <constant 1> : /* codes */
-
-break;
-
-case <constant 2>: /* codes */
-
-break;
-
-…
-
-default: /* codes */
-
+    case <constant 1> : /* codes */
+        break;
+    case <constant 2>: /* codes */
+        break;
+    …
+    default: /* codes */
 }
 ```
 
@@ -385,33 +333,19 @@ Example:
 let x = 10;
 
 switch (x) {
-
-case 5:
-
-console.log("1");
-
-break;
-
-case 10:
-
-console.log("2");
-
-break;
-
-case 15:
-
-console.log("3");
-
-break;
-
-default: {
-
-console.log("4");
-
-console.log("No matched");
-
-}
-
+    case 5:
+        console.log("1");
+        break;
+    case 10:
+        console.log("2");
+        break;
+    case 15:
+        console.log("3");
+        break;
+    default: {
+        console.log("4");
+        console.log("No matched");
+    }
 }
 ```
 
@@ -430,9 +364,11 @@ Equivalent to
 ```javascript
 let x;
 
-If (y == 10) { x = 20; }
-
-else { x = 30; }
+If (y == 10) {
+    x = 20;
+} else {
+    x = 30;
+}
 ```
 
 ## Iteration Statement
@@ -457,27 +393,18 @@ Example:
 
 ```javascript
 let x = 10;
-
 let y = 10;
 
 // Do .. While
-
 do {
-
-console.log("do..while: x = ", x);
-
-x++;
-
+    console.log("do..while: x = ", x);
+    x++;
 } while (x < 10);
 
 // While .. Do
-
 while (y < 10) {
-
-console.log("while..do: y = ", y);
-
-y++;
-
+    console.log("while..do: y = ", y);
+    y++;
 }
 ```
 
@@ -497,9 +424,7 @@ Example:
 
 ```javascript
 for (let i = 0; i < 10; i++) {
-
-console.log("i = ", i);
-
+    console.log("i = ", i);
 }
 ```
 
@@ -507,13 +432,9 @@ This for statement can be translated in while-do as:
 
 ```javascript
 let i = 0;
-
 while (i < 10) {
-
-console.log("i = ", i);
-
-i++;
-
+    console.log("i = ", i);
+    i++;
 }
 ```
 
