@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSX4107 Week 3 Javascript 1</title>
+</head>
+<body>
+    <ul id="list1">
+        <li>Existing item 1</li>
+    </ul>
+    <script>
+        var list1 = document.getElementById('list1');
+        // console.log(list1)
+        for (let i = 0; i <= 20; i++) {
+            if (i === 5 || i === 10 || i === 15) {
+                continue
+            } else {
+                list1.innerHTML += `<li>New Item ${i}</li>`;
+            }
+        }
+    </script>
+
+
+</body>
+</html>
