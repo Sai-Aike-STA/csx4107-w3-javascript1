@@ -40,3 +40,17 @@ a2.forEach(printItem);
 function printItem (item) {
     console.log(`item = ${item}`);
 }
+
+
+console.log("==============")
+const a1 = [1, 2, 3, 4, 5, 6, 7]
+const arrayWalk = (value, index, arr) => {
+    console.log(`index: ${index} = ${value}, arr = ${arr}`);
+}
+a1.forEach(arrayWalk);
+
+console.log("==============")
+let a5 = a1.filter((value) => {
+    return value % 2 === 0;
+})
+console.log(a5)
